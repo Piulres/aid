@@ -7,6 +7,7 @@
 		<meta name="description" content="AidCollective is a complete digital service team, based in São Paulo, Brazil." />
 		<meta name="keywords" content="Innovation,Planning,Web Development,Webdesign,Design System,User Interface,User Experience,Interaction Design" />
 		<meta name="author" content="AidCollective" />
+		<meta property="og:image" content="img/3.png" />
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
@@ -17,6 +18,8 @@
 		<main>
 
 			<div class="content">
+
+				<img id="trigger" src="img/3.png"/>
 
 				<div class="sidebar">
 					<nav id="navbar" class="menu">
@@ -42,7 +45,11 @@
 
 						<div class="box-item">
 
-							<p>We work with companies of all sizes, from small startups to medium sized business, delivering both B2B and B2C digital solutions for our clients in a variety of channels.</p>
+							<div>
+
+								<p>We work with companies of all sizes, from small startups to medium-sized business, delivering both B2B and B2C digital solutions for our clients in a variety of channels.</p>
+
+							</div>
 
 						</div>
 
@@ -50,10 +57,9 @@
 
 						<div class="box-item">
 
-							<!-- <img class="img_3" src="img/3.png"/> -->
+							<div class="upper">
 
-							<div>
-
+								<p><b>Services</b></p>
 								<p>Innovation;</p>
 								<p>Planning; Strategy;</p>
 								<p>Design Thinking; User Experience;</p>
@@ -70,15 +76,19 @@
 
 						<div class="box-item">
 
-							<p>Our digital marketing solutions include media in social networks, content writing, SEO, SEM and email campaigns.</p>
+							<div>
+
+								<p>Our digital marketing solutions include media in social networks, content writing, SEO, SEM and email campaigns. Check for more.</p>
+
+							</div>
 
 						</div>
 
 						<div class="box-item">
 
-							<div>
+							<div class="upper">
 							
-								<p>Web Development & Web Design:</p>
+								<p><b>Web Development </br>& Web Design</b></p>
 								<p>Inventory, Clients & Services Systems;</p>
 								<p>Apps;</p>
 								<p>LMS; CMS; Small ERP & CRM Solutions;</p>
@@ -86,9 +96,9 @@
 
 							</div>
 
-							<div>
+							<div class="upper">
 							
-								<p>Technologies:</p>
+								<p><b>Technologies</b></p>
 							    <p>Vue; Angular;</p>
 							    <p>Node; Laravel; Wordpress;</p>
 							    <p>GraphQL; APIs; Payment Methods;</p>
@@ -96,22 +106,17 @@
 
 						    </div>
 
-
 					    </div>
 
 						<img class="img_4" src="img/4.png"/>
 
-					  
-
-						
 					<h2 id="collaboration">Collaboration</h2>
 
-					<div class="box-item">
+						<div class="box-item">
 
 							<div>
 
-						<p>What sets us apart is our team’s rich history in the advertising, user experience, art and programming.</p>
-						<p>This experience influences our thinking, providing strategic advantages to our clients.</p>
+								<p>What sets us apart is our team’s rich history in the advertising, user experience, art and programming. This experience influences our thinking, providing strategic advantages to our clients.</p>
 
 							</div>
 
@@ -123,8 +128,6 @@
 
 							<div>
 
-								
-
 								<p>We know how hard is the reality of a digital team.</p>
 
 								<p>AidCollective has people and teams for helping you temporary with small fixes, repairs and changes to put out the fire when you have a hot week.</p>
@@ -132,13 +135,6 @@
 							</div>
 
 						</div>
-						<div class="box-item">
-
-								<span><p>Sometimes, we just need friends to help us on the weekend :)</p></span>
-
-						</div>
-
-						
 
 						<div class="box-item">
 						
@@ -146,37 +142,35 @@
 
 						</div>
 
+						<div class="box-item center">
+
+							<p class="colored">Sometimes, we just need friends to help us on the weekend :)</p>
+
+						</div>
 
 					<h2 id="contact">Contact</h2>
 
-						
 						<div class="box-item">
-
+				
 							<div>
 
 								<p>We like to help and make business with friends!</p>
 
-								
+								<p class="colored">
+									
+									<a href="mailto:hello@aidcollective.com">Click here to send us a mail</a>
+									
+									or 
+
+									<a href="https://wa.me/5511970828949">whatsapp message</a>
+
+								</p>
 
 							</div>
-						
-						</div>
 
-						<div class="box-item">
-
-							<p class="colored">
-							
-							<a href="mailto:hello@aidcollective.com">Send us a mail</a>
-							
-							<a href="https://wa.me/5511970828949">or whatsapp message</a>
-
-							</p>
+							<img class="img_6" src="img/6.png"/>
 
 						</div>
-					
-
-						<img class="img_6" src="img/6.png"/>
-
 
 				</div>
 
@@ -197,8 +191,8 @@
 						<p class="intro__info">Helping Teams, Helping People</p>
 					</div>					
 					<a class="enter3 intro__enter animatable">
-						Enter
-						<img src="img/7.png"/>
+						click to enter
+						<img src="img/3.png"/>
 					</a>
 				</div>
 
@@ -242,6 +236,12 @@
 		<script src="js/demo.js"></script>
 
 		<script type="text/javascript">
+
+			$(document).ready(function () {
+			    setTimeout( function(){
+			        $('#trigger').css("display", "none");
+			    },100);
+			});
 			
 			document.querySelectorAll('.menu a[href^="#"]').forEach(anchor => {
 			    anchor.addEventListener('click', function (e) {
