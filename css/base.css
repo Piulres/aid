@@ -17,6 +17,7 @@ body {
 	--color-bg: #fff;
 	--color-link: #c8552b;
 	--color-drop: #d5d5d5;
+	--color-drop-dark: #e3e3e3;
 	--color-link-hover: #c8552b;
 	--color-logo-bg: #c8552b;
 	height: 100vh;
@@ -39,6 +40,16 @@ h1, h2, h3, h4, h5 {
 	font-family: 'coolvetica';
 	margin: 0;
 	padding-top: 20px;
+}
+
+p span,
+.colored {
+	font-family: 'Open Sans', sans-serif;
+	color:  var(--color-link);
+}
+
+p a {
+	color: unset;
 }
 
 h1:hover,
@@ -316,7 +327,7 @@ a:hover {
     padding: 1rem 1rem 1rem 7.5rem;
     display: flex;
     width: 100%;
-    height: 100px;
+    height: 140px;
     flex-wrap: wrap;
     position: fixed;
     top: 0;
@@ -340,7 +351,7 @@ a:hover {
 	height: 100%;
 	display: block;
 	overflow-y: scroll;
-	padding: 100px 30px 50px 30px;
+	padding: 150px 30px 50px 30px;
 	flex: 1;
 }
 
